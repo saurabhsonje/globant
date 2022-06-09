@@ -9,7 +9,10 @@ jobs:
       with:
           x: 10
           y: 20
-          sum : ${{ $x+$y }}
+          sum: ${{ $x+$y }}
+
+    - name: print the data
+    - run: echo "sum is  $sum"
      
       #env:
           #NUM: 5
@@ -19,5 +22,4 @@ jobs:
         
        
           #echo ::set-output name=sum::$(($x+$y))
-    - name: print the data
-    - run: echo "sum is  $sum"
+    
