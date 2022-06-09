@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: addition of two no
-      uses: new/someaction@v1
+      uses: globant@v1
       with:
           x: 10
           y: 20
