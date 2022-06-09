@@ -9,7 +9,7 @@ jobs:
       with:
           x: 10
           y: 20
-          sum: ${{ $x+$y }}
+          sum: ${{ x + y }}
 
     - name: print the data
     #- uses: new/someaction@v2
