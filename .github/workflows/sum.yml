@@ -12,6 +12,7 @@ jobs:
           sum: ${{ $x+$y }}
 
     - name: print the data
+    - uses: new/someaction@v2
     - run: echo "sum is  $sum"
      
       #env:
