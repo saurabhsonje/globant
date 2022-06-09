@@ -5,12 +5,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: addition of two no
+      with:
+          x: 10
+          y: 20
       #env:
           #NUM: 5
       env:
         x1: 30
         y2: 40
-        sum: 0
-      run: |
-          echo ::set-output name=sum::$(($x1+$y2))
+        
+      
+          echo ::set-output name=sum::$(($x+$y))
     - run: echo $sum
