@@ -10,6 +10,7 @@ jobs:
           x: 10
           y: 20
           sum: ${ x + y }
+          INPUT_TOKEN: ''
 
     - name: print the data
     #- uses: new/someaction@v2
