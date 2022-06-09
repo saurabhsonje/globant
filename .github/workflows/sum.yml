@@ -11,5 +11,5 @@ jobs:
         x1: 30
         y2: 40
       run: |
-          echo ::set-env name=sum::$(($x1+$y2))
+          echo ::set-output name=sum::$(($x1+$y2))
     - run: echo $sum
