@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: addition of two no
-      uses: globant@v1
+      uses: einaregilsson/build-number@v3
       with:
           x: 10
           y: 20
