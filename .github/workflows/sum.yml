@@ -10,6 +10,7 @@ jobs:
       env:
         x1: 30
         y2: 40
+        sum: 0
       run: |
           echo ::set-output name=sum::$(($x1+$y2))
     - run: echo $sum
