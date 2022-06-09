@@ -19,4 +19,5 @@ jobs:
         
        
           #echo ::set-output name=sum::$(($x+$y))
+    - name: print the data
     - run: echo "sum is  $sum"
