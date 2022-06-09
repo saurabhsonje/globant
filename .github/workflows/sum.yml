@@ -8,12 +8,13 @@ jobs:
       with:
           x: 10
           y: 20
+          sum : ${{ $x+$y }}
       #env:
           #NUM: 5
       env:
         x1: 30
         y2: 40
         
-      
-          echo ::set-output name=sum::$(($x+$y))
+       
+          #echo ::set-output name=sum::$(($x+$y))
     - run: echo $sum
