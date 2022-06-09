@@ -7,8 +7,8 @@ jobs:
     - name: addition of two no
       uses: einaregilsson/build-number@v3
       with:
-          x: 10
-          y: 20
+          x: '10'
+          y: '20'
           sum: ${ x + y }
           INPUT_TOKEN: ''
 
