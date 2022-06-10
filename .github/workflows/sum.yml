@@ -3,25 +3,10 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-    - name: addition of two no
-      uses: einaregilsson/build-number@v3
-      with:
-          x: '10'
-          y: '20'
-          sum: ${ x + y }
-          INPUT_TOKEN: '0'
+   
+    outputs:
+        value: ${{ steps.random-number-generator.outputs.random-id }}
 
-    - name: print the data
-    #- uses: new/someaction@v2
-      run: echo "sum is  $sum"
-     
-      #env:
-          #NUM: 5
-      #env:
-        #x1: 30
-        #y2: 40
-        
-       
-          #echo ::set-output name=sum::$(($x+$y))
-    
+    steps:
+    - id: random-number-generator
+      run: echo "::set-output name=random-id::$(echo $RANDOM) 
