@@ -1,7 +1,7 @@
 on: push
 
 jobs:
-  build:
+  job1:
     runs-on: ubuntu-latest
    
     outputs:
@@ -9,4 +9,15 @@ jobs:
 
     steps:
     - id: random-number-generator
-      run: echo "::set-env name=random-id::hello"
+      run: echo "::set-output name=random-id::hello"
+  job2:
+   runs-on: ubuntu-latest
+   needs: job1
+   steps:
+    - run: echo ${{needs.job1.steps.value}}
+ 
+    
+
+   
+      
+    
